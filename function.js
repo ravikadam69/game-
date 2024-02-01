@@ -7,13 +7,13 @@ const msg = document.querySelector("#msg")
 const scorebot=document.querySelector("#botscore")
 const scoreuser=document.querySelector("#userscore")
 
-const showwinner=(userwin,userChoice,botchoice)=>{
+const showwinner=(userwin,userChose,botchose)=>{
    if(userwin){
-   msg.innerText=`you:-"${userChoice}"  bots:-"${botchoice}" you win`
+   msg.innerText=`you:-"${userChose}"  bots:-"${botchose}" you win`
    msg.style.backgroundColor="green"
    scoreuser.innerText=userScore++
    }else{
-      msg.innerText=`you:-"${userChoice}" bot:-"${botchoice}"  you lose`
+      msg.innerText=`bot:-"${botchose}" you:-"${userChose}"  you lose`
       msg.style.backgroundColor="red"
       scorebot.innerText=botScore++
    }
@@ -42,7 +42,7 @@ const playgame=(userChose)=>{
          userwin=botchose==="paper"? false : true
       }else if(userChose==="paper"){
          userwin=botchose==="sissor"? false : true
-      }else(userChose==="sissor"{
+      }else{
          userwin=botchose==="rock" ? false : true
       }
       showwinner(userwin,userChose,botchose)
