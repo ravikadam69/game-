@@ -42,7 +42,7 @@ const playgame=(userChose)=>{
          userwin=botchose==="paper"? false : true
       }else if(userChose==="paper"){
          userwin=botchose==="sissor"? false : true
-      }else{
+      }else(userChose==="sissor"{
          userwin=botchose==="rock" ? false : true
       }
       showwinner(userwin,userChose,botchose)
