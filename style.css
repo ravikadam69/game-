@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: bisque;
+}
+h1{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    margin: 0%;
+}
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; 
+}
+.choices :hover{
+    background-color: pink;
+    cursor: pointer;
+}
+.choice{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 50px;
+}
+.choice :hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+img{
+    object-fit: contain;
+    height: 100px;
+    width: 100x;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    background-size: cover;
+}
+.score-board{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.score{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50px;
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 50px;
+}
+.msg-container :hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+#msg{
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    margin: 0%;
+    width: 360px;
+    align-items: center;
+    justify-content: space-around;
+    background-color:orange;
+    border-end-start-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
